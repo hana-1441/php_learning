@@ -243,7 +243,7 @@ echo "<br><br>===================explode =======================<br><br>";
 
 $var1="Hola Amigo. ~from Miguel";
 
-$varx=explode(" ","Hola Amigo. ~from Miguel",4); //convert string to array
+$varx=explode("o","Hola Amigo. ~from Miguel",4); //convert string to array
 //split string into array elements -> split performs based on white space 
 
 echo "<pre>";
@@ -266,6 +266,8 @@ echo "<br>";
 print_r(array_merge($name,$age)); // it's like dictionary update method in python(if key will same then update value with the other one)
 //It will overwrite the last value
 
+//if key was given and key will same for both array then value will be replaced 
+// but if array w/o key then will merge all elements altogather
 
 
 echo "<br>";
@@ -277,8 +279,9 @@ echo "<br>";
 
 echo "array merge example";
 echo "<br>";
-echo "<br>";
-
+echo "<br><pre>>>>>>>>>>>>>>>>>>>here it is";
+print_r($a);
+print_r($b);
 echo "<pre>";
 print_r(array_merge($a,$b));
 echo "array merge recursive";
